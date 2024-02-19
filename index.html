@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Bootstrap</title>
+    <link rel="stylesheet" href="CSS/bootstraps/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+      <div id="wraper" class="navbar-nav bg-primary sidebar  accordion" id="accordionSidebar" style="width: 15%; height: 39em; padding: 12px;">
+        <ul>
+            <a class="sidebar-brand d-flex align-items-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text text-white mx-2">S8 ADMIN <sup>2</sup></div>
+            </a>
+            <hr class="sidebar-divider">
+            <li class="nav-item active text-white">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span class="text-white">Dashboard</span>
+                </a>
+                <hr class="sidebar-divider">
+            </li>
+            <div class="sidebar-heading text-white">
+                INTERFACE
+            </div>
+
+            <li class="nav-item text-white">
+                <a class="nav-link collapsed" href="a" data-toggle="collapse" data-targeet="collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span class="text-white">Composents</span>
+                </a>
+            </li>
+
+            <li class="nav-item text-white">
+                <a class="nav-link collapsed" href="a" data-toggle="collapse" data-targeet="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wernch "></i>
+                    <span class="text-white">Utilities</span>
+                </a>
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading text-white">
+                ADDONS
+            </div>
+
+            <li class="nav-item text-white">
+                <a class="nav-link collapsed" href="a" data-toggle="collapse" data-targeet="collapseTwo" aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span class="text-white">Pages</span>
+                </a>
+                
+            </li>
+            <li class="nav-item text-white">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-arra"></i>
+                    <span class="text-white">Charts</span>
+                </a>
+            </li>
+            <li class="nav-item text-white">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table "></i>
+                    <span class="text-white">Tables</span>
+                </a>
+            </li>
+            <hr class="sidebar-divider d-none d-md-block">
+            <div class="text-center d-none d-md-block">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+            </ul>
+
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content" style="width: 71.2em; margin-left: 12em; margin-bottom: 12em;">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow" >
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                          <input type="text" class="form-control bg-light border-0 small" placeholder=" Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-apprend" >
+                                <button class="btn btn-primary" type="">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div> 
+                        </div>
+                    </form>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-sm"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small" placeholder=" Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                          <div class="input-group-apprend" >
+                                              <button class="btn btn-primary" type="">
+                                                  <i class="fas fa-search fa-sm"></i>
+                                              </button>
+                                          </div> 
+                                      </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">Alerts center</h6>
+
+                                <a class="dropdown-item d-flex-align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fa fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a class="dropdown-item d-flex-align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fa fa-donate text-white"></i>
+                                        </div>
+                                
+                                    <a class="dropdown-item d-flex-align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-warning">
+                                                <i class="fa fa-exclamation-triangle text-white"></i>
+                                            </div>
+                                        </div>
+                                        
+                                    </a>   
+                                    <a class="dropdown-item text-center small text-gray-500" href="#">
+                                        Show All Alerts
+                                    </a>   
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow max-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messageDropdown">
+                                <h6 class="dropdown-header">Message Center</h6>
+                                
+                            </div>
+                        </li>
+                        <div class="topbar-dividre d-none d-sm-block" style="margin-bottom: 2em;"></div>
+                        <li class="nav-item dropdpwn no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-500 small">Valerie Luna</span>
+                                <img class="img-profile rounded-circle" src="images/777653-cool-transparent-wallpaper.jpg" alt="" style="font-size: -2em;">
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text text-gray-400"></i>
+                                </a>
+                                <a class="dropdown-item" href="">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text text-gray-400"></i>
+                                </a>
+                                <a class="dropdown-item" href="">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text text-gray-400"></i>
+                                </a>
+                                <a class="dropdown-item" href="">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text text-gray-400"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="conatiner-fluid">
+                    <div class=" d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class=" h3 mb-0 texte-gray-800">Dashboard</h1>
+                        <a class="d-none d-sm-inline-block btn btn-primary shadow-sm" href="">
+                            <i class="fas fa-download fa-sm text-white-50"></i>
+                            Generate report
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters lign-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase">Earnings (Monthly)</div>
+                                            <div class="h5 mb-0 fonts-weight-bold texte-gray-800">$40,000</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-calendrier fa-2x text text-gray-300"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-success shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters lign-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-success text-uppercase">Earnings (Annual)</div>
+                                        <div class="h5 mb-0 fonts-weight-bold texte-gray-800">$215,000</div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-Dollard fa-2x text text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-info shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters lign-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-info text-uppercase">TASKS</div>
+                                    <div class="h5 mb-0 mr-3 font-weight-bold texte-gray-800">50%
+                                        <div class="col">
+                                            <div class="progress progress-sm mr-2" style="margin-left: 3em;">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuetext="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                            </div>
+                             <div class="col-auto">
+                                <i class="fas fa-Dollard fa-2x text text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters lign-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-warning text-uppercase">PENDINGS REQUESTS</div>
+                                <div class="h5 mb-0 fonts-weight-bold texte-gray-800">18</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-Dollard fa-2x text text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-8 col-lg-7">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                    <div class="dropdown no-arrow">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="chart-area">
+                        <img src="images/myAreaChart.png" style="height: 19em;" alt="">
+                        <canvas id="myAreaChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-5">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                    <div class="dropdown no-arrow">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="chart-area">
+                        <img src="images/OnPaste.20190130-043353.png" style="width: 20em;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Project</h6>
+                </div>
+                <div class="card-body">
+                    <h4 class="small font-weight-bold">Server Database<span class="float-right">20%</span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+
+                    <h4 class="small font-weight-bold">Sales Tracking<span class="float-right">40%</span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    
+                    <h4 class="small font-weight-bold">Customer Database<span class="float-right">60%</span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <h4 class="small font-weight-bold">Payout Details<span class="float-right">80%</span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
+                </div>
+                <div class="card-body">
+                    <div class="text-center">
+                        <img src="images/isep_admin2.png" style="width: 26.5em;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
